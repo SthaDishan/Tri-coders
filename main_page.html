@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Services - BhatBhatte</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+ <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <script>
+        function populate(s1,s2){
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+            s2.innerHTML = "";
+            if(s1.value == "TVS"){
+                var optionArray = ["Select Model|Select Model","Apache RR 310|Apache RR 310","Apache RTR 160 4V|Apache RTR 160 4V","Apache RTR 200 4V|Apache RTR 200 4V","Ntorq|Ntorq"];
+            } else if(s1.value == "KTM"){
+                var optionArray = ["Select Model|Select Model","Duke 200|Duke 200","Duke 250|Duke 250","Duke 390|Duke 390","Rc 200|Rc 200 ","Rc 390|Rc 390"];
+            } else if(s1.value == "Bajaj"){
+                var optionArray = ["Select Model|Select Model","Pulsar 150|Pulsar 150","Pulsar 220|Pulsar 220","NS 200|NS 200","Rs 200|Rs 200","Dominar 250|Dominar 250","Dominar 400|Dominar 400"];
+            }else if(s1.value == "Honda"){
+                var optionArray = ["Select Model|Select Model","CBR 250|CBR 250","Hornet|Hornet","Shine|Shine","Dio|Dio"];
+            }else if(s1.value == "Yamaha"){
+                var optionArray = ["Select Model|Select Model","R3|R3","R15 V3|R15 V3","R15 V2|R15 V2",,"R15 V1|R15 V1","FZ V3|FZ V3","FZ V2|FZ V2","FZ V1|FZ V1","MT-15|MT-15"];
+            }else if(s1.value == "Aprilia"){
+                var optionArray = ["Select Model|Select Model","SR 125|SR 125","SR 150|SR 150"];
+            }else if(s1.value == "Benelli"){
+                var optionArray = ["Select Model|Select Model","TNT 135|TNT 135","TNT 150|TNT 150","TNT 25|TNT 25","Tnt 300|Tnt 300","Benelli 302R|Benelli 302R"];
+            }else if(s1.value == "Royal Enfield"){
+                var optionArray = ["Select Model|Select Model","Bullet 350|Bullet 350","Bullet 500|Bullet 500","Classic 350|Classic 350","Thunderbird 350|Thunderbird 350","Thunderbird 350x|Thunderbird 350x"];
+            }else if(s1.value == "Suzuki"){
+                var optionArray = ["Select Model|Select Model","Gixxer|Gixxer","Gixxer SF FI|Gixxer SF FI","Burgman 125|Burgman 125","Intruder|Intruder","Access|Access","Hayate|Hayate"];
+            }else if(s1.value == "CF moto"){
+                var optionArray = ["Select Model|Select Model","NK 150|NK 150","NK 250|NK250","NK 400|NK 400"];
+            }
+        
+            for(var option in optionArray){
+                var pair = optionArray[option].split("|");
+                var newOption = document.createElement("option");
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption);
+            }
+        }
+        </script>    
+</head>
+
+<body><nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark clean-navbar" data-aos="fade-down" data-aos-duration="250">
+        <div class="container"><a class="text-center" href="index.html" style="color: rgb(243,245,247);width: 20px;height: 30px;padding: -30px;"><br><br><br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ml-auto"></ul><a href="index.html" style="margin: 5px;padding: 3px;">HOME</a>
+        </div>
+    </nav>
+    <main class="page service-page">
+        <section class="clean-block clean-services dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Service Page</h2>
+                    <p> <b>Our services include:</b><br>
+                        Bike/scooty servicing, Bluebook renew,<br>
+                        Emergency Breakdown, Pickup and Drop</p>
+    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="clean-block add-on newsletter-sign-up blue">
+                            <h2>Enter your vehicle details</h2>
+                           
+<select name="" id="">
+	<option value="">Location</option>
+<option value="">Kathmandu</option>
+<option value="">Lalitpur</option>
+<option value="">Bhaktapur</option>
+</select>
+
+<select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+  <option value="">Brand</option>
+  <option value="Aprilia">Aprilia</option>
+  <option value="Bajaj">Bajaj</option>
+  <option value="Benelli">Benelli</option>
+  <option value="CF moto">CF moto</option>
+  <option value="Honda">Honda</option>
+  <option value="KTM">KTM</option>
+  <option value="Royal Enfield">Royal Enfield</option>
+  <option value="Suzuki">Suzuki</option>
+  <option value="TVS">TVS</option>
+  <option value="Yamaha">Yamaha</option>
+</select>
+
+<select id="slct2" name="slct2">
+    <option value="">Select Model</option>
+</select>
+<input type="button" value="Request" onclick="myfunction()">
+<script >
+    function myfunction(){
+        alert("Your request has been received");
+        //location.replace('index.html');
+    }
+</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="clean-block add-on social-icons">
+            <div class="icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark clean-navbar" data-aos="fade-down" data-aos-duration="250" style="height: 60px;">
+        <div class="container"><a class="text-center" href="index.html" style="color: rgb(243,245,247);width: 250px;height: 60pxpx;padding: -30px;background: url(&quot;assets/img/logo.png&quot;);"><br><br><br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2" style="width: 50px;">
+                <ul class="navbar-nav ml-auto"></ul><a href="index.html" style="margin: 5px;padding: 3px;color: var(--white);">HOME</a>
+            </div>
+        </div>
+    </nav>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

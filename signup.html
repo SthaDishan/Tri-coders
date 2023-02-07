@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register - BhatBhatte</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script></head>
+
+<body>
+    
+
+   
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark clean-navbar" data-aos="fade-down" data-aos-duration="250" style="height: 60px;">
+        <div class="container"><a class="text-center" href="index.html" style="color: rgb(243,245,247);width: 250px;height: 60pxpx;padding: -30px;background: url(&quot;assets/img/logo.png&quot;);"><br><br><br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2" style="width: 50px;">
+                <ul class="navbar-nav ml-auto"></ul><a href="index.html" style="margin: 5px;padding: 3px;color: var(--white);">HOME</a>
+            </div>
+        </div>
+    </nav>
+    <main class="page registration-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Sign up</h2>
+                    <p>It's quick and easy.</p>
+                </div>
+
+                <form action="signup.php" method="POST">
+
+                    <div class="form-group"><label for="name">Full Name</label><input class="form-control item" type="text" name="fullname" id="name" required></div>
+                     <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" name="email" id="email" required></div>
+                    <div class="form-group"><label for="password">Password</label><input class="form-control item" type="password" name="password" id="password" required></div>
+                    <div class="form-group"><label for="cpassword">Confirm Password</label><input class="form-control item" type="password" name="cpassword" id="cpassword" required></div>
+
+                    <div class="form-group"><label for="ph">Phone number (+977)</label><input class="form-control item" type="number" name="mobile" id="ph" maxlength="10" minlength="10" required></div>
+                   <button class="btn btn-primary btn-block" type="submit" name="submit">Sign Up</button><br>
+                                      <h6 align="center">Already have an account? <a href="login.html">log in</a></h6>
+
+                </form>
+
+              
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="clean-block add-on social-icons">
+            <div class="icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
